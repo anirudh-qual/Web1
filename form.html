@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: violet;
+    }
+    h1{
+        
+        color: white;
+       
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+    h2{
+        
+        color: black;
+        font-family: sans-serif;
+
+    }
+    label
+    {
+        font-size: large;
+        
+       
+    }
+    input[type=text],input[type="number"]
+    {       width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px gold;
+            border-radius: 4px;
+            background-color:khaki;
+    }
+    select {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+input[type=submit],input[type=reset]{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+<body>
+    <h1> Registration Form</h1>
+    <h2> Please provide the following details to complete your 3-2 Registration</h2>
+    
+    
+    <form action="/action_page.php">
+        <label for="fname"  >Name:</label><br>
+        <input type="text" id="fname" name="fname" ><br>
+        <label for="Rollnumber">Rollnumber:</label><br>
+        <input type="number" id="Rollnumber" name="Rollnumber"><br><br>
+        <label for="Regno">Registration-number:</label><br>
+        <input type="number" id="Regno" name="Registration-number"><br><br>
+        
+        <label for="Section">Section:</label><br>
+        <input type="radio" id="A"  value="A">
+        <label for="A">A</label><br>
+        <input type="radio" id="B"  value="B">
+        <label for="B">B</label><br><br>
+        
+        
+        
+        
+        
+        <label for="Courses">Choose your courses:</label><br> <br>
+        <select name="courses" id="courses" multiple size="9">
+          <optgroup label="Non Electives">
+            <option value="ITC">ITC</option>
+            <option value="DSP">DSP</option>
+            <option value="DN">DN</option>
+            <option value="ERTOS">ERTOS</option>
+            <option value="OOPS">OOPS</option>
+          </optgroup>
+
+          <optgroup label="Department Electives">
+            <option value="Web Technologies">WT</option>
+            <option value="LPVLSI">LPVLSI</option>
+          </optgroup>
+
+          <optgroup label="Labs">
+            <option value="Communication Systems Lab">CS</option>
+            <option value="Data Networks Lab">Dn lab</option>
+          </optgroup>
+
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+        <input type="Reset" value="Reset">
+      </form> 
+       
+    
+</body>
+</html>
